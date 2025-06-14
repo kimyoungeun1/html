@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+li{list-style: none;}
+a{text-decoration: none; color: inherit;}
+img{max-width: 100%; vertical-align: top;}
+body{background: #fff; color: #333;}
+table{border-collapse: collapse;}
+button{cursor: pointer;}
+
+.wrap{width: 100%; height: 700px; position: relative;}
+.inner{width: 1200px; margin: auto; height: 700px;}
+header{height: 100px; padding-top: 25px; padding-left: 10px; position: relative;}
+nav{position: absolute; top: 57px; right: 0; z-index: 10;}
+nav>ul{display: flex;}
+nav>ul>li>a{display: block; width: 150px; padding: 10px; text-align: center; background: navy; color: #fff; font-weight: bold;}
+nav>ul>li:hover>a,
+nav>ul>li>a:focus{background: #666;}
+.sub{display: none;}
+.sub>li>a{display: block; width: 150px; padding: 5px; text-align: center; color: #fff;}
+.sub>li>a:hover,
+.sub>li>a:focus{background: blueviolet;}
+.bg{position: absolute; top: 100px; left: 0; width: 100%; height: 110px; background: rgba(0, 0, 0, .6); z-index: 5; display: none;}
+
+.slide{height: 300px; position: relative;}
+.slide ul li{position: absolute; width: 1200px; height: 300px; top: 0; left: 0; display: none;}
+.slide ul li.s1{display: block;}
+.slide ul li a{display: block; height: 100%;}
+.slide img{width: 1200px; height: 300px; object-fit: cover;}
+.slide h2{width: 100%; padding: 20px; position: absolute; bottom: 0; left: 0; background: rgba(0, 0, 0, .6); text-align: center; color: #fff;}
+
+.con{height: 200px; display: flex;}
+.con article{width: 400px;}
+.notice h2>a{display: block; width: 150px; padding: 10px; text-align: center; background: navy; color: #fff;}
+.notice th>a{display: block; width: 250px; padding: 5px; text-align: left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.notice td{text-align: center; width: 150px; padding: 5px;}
+.notice tr{border-bottom: 1px dashed #333;}
+.gall h2>a{display: block; width: 150px; padding: 10px; text-align: center; background: navy; color: #fff;}
+.gall ul{padding: 10px; display: flex; gap: 10px;}
+.gall ul li a{display: block; height: 100%;}
+.gall ul li a:hover{opacity: 0.5;}
+.gall img{width: 120px; height: 120px; object-fit: cover;}
+.go h2>a{display: block; width: 150px; padding: 10px; text-align: center; background: navy; color: #fff;}
+.go ul{padding: 10px; display: flex; gap: 10px; justify-content: center; text-align: center;}
+.go img{width: 90px; height: 90px; padding: 20px; border-radius: 20px; background: navy;}
+
+footer{height: 100px; background: #333; color: #fff; padding-top: 25px; padding-left: 10px; position: relative;}
+.fmenu{display: flex; gap: 10px;}
+.fmenu>li{border-right: 1px solid #fff; padding: 0 10px;}
+.fmenu>li:last-child{border: none;}
+select{position: absolute; top: 40px; right: 20px;}
+.fcopy{padding-left: 10px;}
+.popup{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 500px; padding: 20px; text-align: center; background: #fff; border-radius: 20px; z-index: 9999; display: none;}
+.button{text-align: right;}
+button{padding: 10px;}
+button:hover{background: navy; color: #fff;}

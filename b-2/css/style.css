@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+li{list-style: none;}
+a{text-decoration: none; color: inherit;}
+img{max-width: 100%; vertical-align: top;}
+body{background: #fff; color: #333;}
+table{border-collapse: collapse;}
+button{cursor: pointer;}
+
+.wrap{width: 100%; height: 700px; position: relative;}
+header{width: 100%; height: 100px; background: green;}
+header .inner{width: 1200px; height: 100px; background: green; margin: auto; padding-top: 25px; padding-left: 10px; position: relative;}
+nav{position: absolute; top: 55px; right: 0; z-index: 10;}
+nav>ul{display: flex;}
+nav>ul>li>a{display: block; width: 150px; padding: 10px; text-align: center; color: #fff; font-weight: bold;}
+nav>ul>li:hover>a,
+nav>ul>li>a:focus{background: #666;}
+.sub{display: none;}
+.sub>li>a{display: block; width: 150px; padding: 5px; text-align: center; color: #fff;}
+.sub>li>a:hover,
+.sub>li>a:focus{background: green;}
+.bg{position: absolute; top: 100px; left: 0; width: 1200px; height: 140px; background: rgba(0, 0, 0, .6); z-index: 5; display: none;}
+
+.slide{width: 1200px; height: 300px; margin: auto; position: relative; overflow: hidden;}
+.slide ul{position: absolute; width: 1200px; height: 900px; left: 0; top: 0;}
+.slide ul li{position: relative; width: 1200px; height: 300px;}
+.slide ul li a{display: block; height: 100%;}
+.slide img{width: 1200px; height: 300px; object-fit: cover;}
+.slide h2{position: absolute; bottom: 0; left: 0; text-align: center; padding: 20px; background: rgba(0, 0, 0, .6); color: #fff; width: 100%;}
+
+.con{width: 1200px; height: 200px; margin: auto; display: flex;}
+.con article{width: 400px;}
+.notice h2>a{display: block; width: 150px; padding: 10px; text-align: center; padding: 10px; background: green; color: #fff;}
+.notice th>a{display: block; width: 300px; padding: 5px; text-align: left;}
+.notice td{text-align: center; padding: 5px; width: 100px;}
+.notice tr{border-bottom: 1px dashed #333;}
+.gall h2>a{display: block; width: 150px; padding: 10px; text-align: center; padding: 10px; background: green; color: #fff;}
+.gall ul{padding: 10px; display: flex; gap: 10px;}
+.gall ul li a{display: block; height: 100%;}
+.go h2>a{display: block; width: 150px; padding: 10px; text-align: center; padding: 10px; background: green; color: #fff;}
+.go ul{padding: 10px; text-align: center; display: flex; gap: 10px; justify-content: center;}
+.go ul li a{display: block; height: 100%;}
+.go img{width: 90px; height: 90px; padding: 20px; background: green; border-radius: 20px;}
+
+footer{width: 100%; height: 100px; background: #333;}
+footer .inner{width: 1200px; height: 100px; margin: auto; background: #333; color: #fff; position: relative; padding-top: 25px; padding-left: 10px;}
+.fsns{display: flex; gap: 10px; position: absolute; top: 30px; right: 20px;}
+.fsns a{display: block; width: 30px; height: 30px; padding: 10px;}
+.fsns>li:nth-child(1)>a{background: green; border-radius: 50px;}
+.fsns>li:nth-child(2)>a{background: blue; border-radius: 50px;}
+.fsns>li:nth-child(3)>a{background: red; border-radius: 50px;}
+select{top: 70px; position: absolute; right: 25px;}
+.popup{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; height: 700px; background: rgba(0, 0, 0, .6); z-index: 9999; display: none;}
+.popcon{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; padding: 20px; width: 500px; background: #fff; border-radius: 20px;}
+.button{text-align: right;}
+button{padding: 10px;}
+button:hover{background: green; color: #fff;}
