@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+li{list-style: none;}
+a{text-decoration: none; color: inherit;}
+img{max-width: 100%; vertical-align: top;}
+body{background: #fff; color: #333;}
+table{border-collapse: collapse;}
+button{cursor: pointer;}
+
+.wrap{width: 100%; height: 920px; position: relative; min-width: 1200px;}
+.top{width: 100%; height: 800px; display: flex;}
+header{width: 200px; background: skyblue; padding-top: 40px;}
+nav{margin-top: 30px; padding-left: 10px;}
+nav>ul>li{position: relative;}
+nav>ul>li>a{display: block; width: 180px; padding: 10px; background: blue; color: #fff; font-weight: bold;}
+nav>ul>li:hover>a,
+nav>ul>li>a:focus{background: #666;}
+.sub{width: 1000px; height: 180px; position: absolute; top: 0; left: 180px; z-index: 10; display: none;}
+.sub>li{display: inline-block;}
+.sub>li>a{display: block; width: 180px; padding: 10px; text-align: center; color: #fff;}
+.sub>li>a:hover,
+.sub>li>a:focus{background: #369;}
+.bg{position: absolute; top: 117px; left: 180px; background: rgba(0, 0, 0, .6); width: calc(100% - 180px); height: 172.5px; z-index: 5; display: none;}
+
+.contents{width: calc(100% - 200px);}
+.slide{height: 400px; position: relative;}
+.slide ul li{position: absolute; top: 0; left: 0; width: 100%; height: 400px; display: none;}
+.slide ul li.s1{display: block;}
+.slide ul li a{display: block; height: 100%;}
+.slide img{width: 100%; height: 400px; object-fit: cover;}
+.slide h2{position: absolute; bottom: 0; left: 0; width: 100%; padding: 10px; background: rgba(0, 0, 0, .6); text-align: center; color: #fff;}
+
+.con{height: 400px;}
+.con1{height: 150px; background: blue;}
+.con1 ul{display: flex;}
+.con1 ul li a{width: 190px; height: 100%; display: block; padding: 20px; text-align: center; color: #fff;}
+
+.con2{height: 250px; display: flex;}
+.con2 article{width: 50%;}
+.notice h2>a{display: block; width: 150px; padding: 10px; text-align: center; margin-top: 10px; margin-left: 10px; background: blue; color: #fff;}
+.notice th>a{display: block; text-align: left; width: 500px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding: 10px;}
+.notice td{text-align: center; padding: 10px; width: 150px;}
+.notice tr{border-bottom: 1px dashed #333;}
+.gall h2>a{display: block; width: 150px; padding: 10px; text-align: center; margin-top: 10px; margin-left: 10px; background: blue; color: #fff;}
+.gall ul{padding: 10px; display: flex; gap: 20px;}
+.gall ul li a{display: block; height: 100%; text-align: center;}
+.gall img{width: 400px; height: 140px; object-fit: cover;}
+
+footer{width: 100%; height: 120px; background: #333; color: #fff; padding-left: 200px; padding-top: 30px; position: relative;}
+.fmenu{display: flex; gap: 10px;}
+.fmenu>li{border-right: 1px solid #fff; padding: 0 10px;}
+.fmenu>li:last-child{border: none;}
+select{position: absolute; top: 40px; right: 20px;}
+.fcopy{padding-left: 10px;}
+.popup{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #fff; padding: 20px; width: 500px; text-align: center; border-radius: 20px; z-index: 9999; display: none;}
+.button{text-align: right;}
+button{padding: 10px;}
