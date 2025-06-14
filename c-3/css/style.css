@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+li{list-style: none;}
+a{text-decoration: none; color: inherit;}
+img{max-width: 100%; vertical-align: top;}
+body{background: #fff; color: #333;}
+table{border-collapse: collapse;}
+button{cursor: pointer;}
+
+.wrap{width: 1000px; height: 650px; display: flex; position: relative;}
+header{width: 200px; background: #e0e223; padding-top: 40px;}
+nav{position: relative; padding-left: 10px;}
+nav>ul>li>a{width: 180px; padding: 10px; text-align: center; background: yellowgreen; display: block; font-weight: bold;}
+nav>ul>li:hover>a,
+nav>ul>li>a:focus{background: #666; color: #fff;}
+.sub{position: absolute; top: -20px; left: 180px; width: 180px; height: 250px; background: #fff; z-index: 10; display: none;}
+.sub>li>a{display: block; width: 180px; padding: 10px; text-align: center;}
+.sub>li>a:hover,
+.sub>li>a:focus{background: yellow;}
+
+.contents{width: 800px;}
+.slide{height: 350px; position: relative; overflow: hidden;}
+.slide ul{position: absolute; width: 2400px; height: 350px; top: 0; left: 0; display: flex;}
+.slide ul li{position: relative; width: 800px; height: 350px;}
+.slide ul li a{display: block; height: 100%;}
+.slide img{width: 800px; height: 350px; object-fit: cover;}
+.slide h2{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; background: rgba(0, 0, 0, .6); width: 100%; padding: 10px; color: #fff;}
+
+.con{height: 200px; display: flex;}
+.notice{width: 300px;}
+.notice h2>a{display: block; width: 150px; padding: 10px; text-align: center; background: #e0e223;}
+.notice th>a{display: block; width: 200px; padding: 5px; text-align: left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.notice td{text-align: center; width: 100px; padding: 5px;}
+.notice tr{border-bottom: 1px dashed #333;}
+.gall{width: 300px;}
+.gall h2>a{display: block; width: 150px; padding: 10px; text-align: center; background: #e0e223;}
+.gall ul{display: flex; gap: 10px; padding: 10px;}
+.gall ul li a{display: block; height: 100%;}
+.gall ul li a:hover{opacity: 0.5;}
+.gall img{width: 90px; height: 120px; object-fit: cover;}
+.banner{width: 200px;}
+.banner h2>a{display: block; width: 150px; padding: 10px; text-align: center; background: #e0e223;}
+.banner>a{display: block; height: 100%; position: relative;}
+.banner img{width: 200px; height: 140px; object-fit: cover;}
+.banner div{position: absolute; top: 0; left: 0; width: 200px; height: 140px; text-align: center; padding-top: 20px; background: rgba(239, 250, 40, .6);}
+.banner h4{color: orange; text-shadow: 2px 2px 7px #333;}
+.banner p{background: #333; color: #fff; display: inline-block; padding: 5px;}
+
+footer{height: 100px; background: #333; color: #fff; padding: 10px; display: flex; gap: 20px;}
+.flogo img{width: 200px; height: 80px;}
+.fmenu{display: flex; gap: 10px;}
+.fmenu>li{border-right: 1px solid #fff; padding: 0 10px;}
+.fmenu>li:last-child{border: none;}
+.fcopy{padding-left: 10px;}
+.popup{position: absolute; width: 500px; padding: 20px; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; background: #fff; border-radius: 20px; z-index: 9999; display: none;}
+.button{text-align: right;}
+button{padding: 10px;}
